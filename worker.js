@@ -9,15 +9,13 @@ export default {
     }
 
     // Community page
-    if (
-      url.pathname === "/community" ||
-      url.pathname === "/community/"
-    ) {
+    if (url.pathname === "/community" || url.pathname === "/community/") {
       url.pathname = "/community.html";
     }
 
+    // Serve the requested asset directly
     return env.ASSETS.fetch(
-      new Request(url, request)
+      new Request(url.toString(), request)
     );
   },
 };
