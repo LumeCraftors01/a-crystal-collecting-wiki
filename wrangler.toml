@@ -1,5 +1,5 @@
-
-name = "crystalcsxs"
+# wrangler.toml
+name = 'a-crystal-collecting-wiki'
 main = "worker.js"
 compatibility_date = "2026-09-01"
 
