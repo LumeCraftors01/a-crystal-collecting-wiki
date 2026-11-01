@@ -1,5 +1,5 @@
-# wrangler.toml
-name = 'a-crystal-collecting-wiki'
+
+name = "a-crystal-collecting-wiki"
 main = "worker.js"
 compatibility_date = "2026-09-01"
 
@@ -9,7 +9,7 @@ workers_dev = true
 directory = "."
 binding = "ASSETS"
 run_worker_first = true
-not_found_handling = "single-page-application"
+not_found_handling = "404"
 
 [[d1_databases]]
 binding = "DB"
