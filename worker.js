@@ -3,9 +3,9 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // Main simulator page
+    // Main simulator
     if (url.pathname === "/") {
-      url.pathname = "/Crystal%20Collecting%20Simulator.html";
+      url.pathname = "/Crystal Collecting Simulator.html";
     }
 
     // Community page
@@ -16,9 +16,8 @@ export default {
       url.pathname = "/community.html";
     }
 
-    // Serve files from Cloudflare Assets
     return env.ASSETS.fetch(
-      new Request(url.toString(), request)
+      new Request(url, request)
     );
   },
 };
