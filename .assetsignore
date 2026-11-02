@@ -1,0 +1,6 @@
+worker.js
+wrangler.toml
+wrangler.jsonc
+README.md
+supabase-setup.sql
+.assetsignore
